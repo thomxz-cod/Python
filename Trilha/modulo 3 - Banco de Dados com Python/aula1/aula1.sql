@@ -21,4 +21,4 @@ values
 
 select * from alunos; -- consulta tudo
 select nome, email from alunos; -- consulta apenas nome e email
-select * from alunos where nome like "t%"; -- consulta apenas onde o nome começa com "t"
+select * from alunos where nome like "t%"; -- consulta apenas onde o nome começa com t
