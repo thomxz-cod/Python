@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, Float
-from aula.app.database import Base 
+from app.database import Base 
 
 class Departamento(Base):
     __tablename__= 'departamentos' # nome da tabela no banco

@@ -1,5 +1,5 @@
-from aula.app.database import SessionLocal
-from aula.app.models import Departamento, Cargo, Funcionario
+from app.database import SessionLocal
+from app.models import Departamento, Cargo, Funcionario
 
 def popular_banco():
     db = SessionLocal()   # abrir sessão
