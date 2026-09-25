@@ -24,7 +24,7 @@ def popular_banco():
         ])
 
         db.add_all([
-            Funcionario(nome='Toin Lindão', email='toin@gmail.com', telefone='61999679999', salario=40000.),
+            Funcionario(nome='Toin', email='toin@gmail.com', telefone='61999679999', salario=40000.),
             Funcionario(nome='Bea', email='bea@gmail.com', telefone='61999679999', salario=12000.),
             Funcionario(nome='Dinha', email='dinha@gmail.com', telefone='61999679999', salario=0.),
             Funcionario(nome='Sarah', email='sarah@gmail.com', telefone='61999679999', salario=20.),

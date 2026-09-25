@@ -8,7 +8,8 @@ def criar_funcionario(db: Session, nome: str, email: str, telefone: str, salario
     ).first()
 
     if existe:
-        raise ValueError(f'E-mail {email} já cadastrado!!')
+        print(f'E-mail {email} já cadastrado!!')
+        return None
 
     # criar Objeto
     novo = Funcionario(nome=nome, email=email, telefone=telefone, salario=salario)
