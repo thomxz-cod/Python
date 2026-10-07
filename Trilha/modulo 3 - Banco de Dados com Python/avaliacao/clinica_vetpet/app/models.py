@@ -18,7 +18,7 @@ class Animal(Base):
     
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome_animal = Column(String(60), nullable=False)
-    expecie = Column(String(40))
+    especie = Column(String(40))
     raca = Column(String(60))
     peso_kg = Column(Float, nullable=False)
     tutor_id = Column(Integer, ForeignKey("tutores.id"))

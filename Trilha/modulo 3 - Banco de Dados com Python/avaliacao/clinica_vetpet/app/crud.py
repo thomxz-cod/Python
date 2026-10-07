@@ -18,3 +18,13 @@ def inserir_tutor(db: Session, nome_completo: str, telefone: str, email: str):
     db.commit()
     db.refresh(novo)
     return novo
+
+def inserir_animal(db: Session, nome_animal: str, especie: str, raca: str, peso_kg: float, tutor_id:int):
+
+    # criar Objeto
+    novo = Animal(nome_animal=nome_animal, especie=especie, raca=raca, peso_kg=peso_kg, tutor_id=tutor_id)
+
+    db.add(novo)
+    db.commit()
+    db.refresh(novo)
+    return novo
