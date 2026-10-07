@@ -8,12 +8,7 @@ Base.metadata.create_all(bind=engine)
 db = SessionLocal()
 try:
     inserir_tutor(db, "Toin", "toin@gmail.com", "61999200000")
-    
-finally:
-    db.close()
-
-db = SessionLocal()
-try:
     inserir_animal(db, "Nina", "caramelo", "cachorro", 12, 1)
+    inserir_atendimento(db, "14/11/2026", "velhice", 200, 1)
 finally:
     db.close()

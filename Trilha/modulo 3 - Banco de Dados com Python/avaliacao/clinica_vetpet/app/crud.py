@@ -28,3 +28,13 @@ def inserir_animal(db: Session, nome_animal: str, especie: str, raca: str, peso_
     db.commit()
     db.refresh(novo)
     return novo
+
+def inserir_atendimento(db: Session, data_atend: str, motivo: str, valor_cons: float, animal_id:int):
+
+    # criar Objeto
+    novo = Atendimento(data_atend=data_atend, motivo=motivo, valor_cons=valor_cons, animal_id=animal_id)
+
+    db.add(novo)
+    db.commit()
+    db.refresh(novo)
+    return novo
